@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="branch_list">
+        <item>@string/branch1</item>
+        <item>@string/branch2</item>
+    </string-array>
+
+    <string name="branch1">CSE</string>
+    <string name="branch2">ECE</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hostel_list">
+        <item></item>
+        <item>"Yes"</item>
+        <item>"No"</item>
+        <item>"Not currently"</item>
+    </string-array>
+</resources>

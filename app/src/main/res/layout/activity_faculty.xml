@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context='.faculty'>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".faculty"
+        android:background="@color/black">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/faculty_cardview1"
+            app:layout_constraintBottom_toTopOf="@+id/faculty_cardview2"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            tools:layout_editor_absoluteX="1dp"><![CDATA[>
+        ]]>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/faculty_image1"
+                    android:layout_width="95dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/faculty1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.052"
+                    app:layout_constraintStart_toEndOf="@+id/faculty_image1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.171" />
+
+                <EditText
+                    android:id="@+id/faculty1_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    app:layout_constraintStart_toEndOf="@id/faculty_image1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/faculty1_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:inputType="textEmailAddress"
+                    tools:layout_editor_absoluteX="113dp"
+                    tools:layout_editor_absoluteY="31dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty1_phone"
+                    android:inputType="phone"
+                    app:layout_constraintTop_toBottomOf="@id/faculty1_email"
+                    app:layout_constraintStart_toStartOf="@id/faculty_image1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/faculty_cardview1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/faculty_cardview2"
+            app:layout_constraintBottom_toTopOf="@+id/faculty_cardview3"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            tools:layout_editor_absoluteX="1dp"><![CDATA[>
+        ]]>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/faculty_image2"
+                    android:layout_width="95dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/faculty2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.052"
+                    app:layout_constraintStart_toEndOf="@+id/faculty_image2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.171" />
+
+                <EditText
+                    android:id="@+id/faculty2_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    app:layout_constraintStart_toEndOf="@id/faculty_image2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/faculty2_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:inputType="textEmailAddress"
+                    tools:layout_editor_absoluteX="113dp"
+                    tools:layout_editor_absoluteY="31dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty2_phone"
+                    android:inputType="phone"
+                    app:layout_constraintTop_toBottomOf="@id/faculty2_email"
+                    app:layout_constraintStart_toStartOf="@id/faculty_image2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/faculty_cardview3"
+            app:layout_constraintTop_toBottomOf="@+id/faculty_cardview2"
+            app:layout_constraintBottom_toTopOf="@+id/faculty_cardview4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/faculty_image3"
+                    android:layout_width="95dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/faculty3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.052"
+                    app:layout_constraintStart_toEndOf="@+id/faculty_image3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.171" />
+
+                <EditText
+                    android:id="@+id/faculty3_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/faculty_image3"
+                    app:layout_constraintTop_toBottomOf="@id/faculty3_name"
+                    tools:layout_editor_absoluteX="113dp"
+                    tools:layout_editor_absoluteY="31dp" />
+
+                <EditText
+                    android:id="@+id/faculty3_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/faculty_image3"
+                    app:layout_constraintTop_toBottomOf="@id/faculty3_email" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="20dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/faculty_cardview4"
+            app:layout_constraintTop_toBottomOf="@+id/faculty_cardview3"
+            app:layout_constraintBottom_toTopOf="@+id/faculty_cardview5">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/faculty_image4"
+                    android:layout_width="95dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/faculty4_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.052"
+                    app:layout_constraintStart_toEndOf="@+id/faculty_image4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.171" />
+
+                <EditText
+                    android:id="@+id/faculty4_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    app:layout_constraintStart_toEndOf="@id/faculty_image4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/faculty4_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:inputType="textEmailAddress"
+                    tools:layout_editor_absoluteX="113dp"
+                    tools:layout_editor_absoluteY="31dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty4_phone"
+                    android:inputType="phone"
+                    app:layout_constraintTop_toBottomOf="@id/faculty4_email"
+                    app:layout_constraintStart_toStartOf="@id/faculty_image4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="20dp"
+            android:id="@+id/faculty_cardview5"
+            app:layout_constraintTop_toBottomOf="@id/faculty_cardview4"
+            app:layout_constraintBottom_toTopOf="@+id/faculty_cardview6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/faculty_image5"
+                    android:layout_width="95dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/faculty5_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.052"
+                    app:layout_constraintStart_toEndOf="@+id/faculty_image5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.171" />
+
+                <EditText
+                    android:id="@+id/faculty5_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    app:layout_constraintStart_toEndOf="@id/faculty_image5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/faculty5_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:inputType="textEmailAddress"
+                    tools:layout_editor_absoluteX="113dp"
+                    tools:layout_editor_absoluteY="31dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty5_phone"
+                    android:inputType="phone"
+                    app:layout_constraintTop_toBottomOf="@id/faculty5_email"
+                    app:layout_constraintStart_toStartOf="@id/faculty_image5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="20dp"
+            android:id="@+id/faculty_cardview6"
+            app:layout_constraintTop_toBottomOf="@id/faculty_cardview5"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/faculty_image6"
+                    android:layout_width="95dp"
+                    android:layout_height="66dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/faculty6_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.052"
+                    app:layout_constraintStart_toEndOf="@+id/faculty_image6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.171" />
+
+                <EditText
+                    android:id="@+id/faculty6_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    app:layout_constraintStart_toEndOf="@id/faculty_image6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/faculty6_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:inputType="textEmailAddress"
+                    tools:layout_editor_absoluteX="113dp"
+                    tools:layout_editor_absoluteY="31dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty6_phone"
+                    android:inputType="phone"
+                    app:layout_constraintTop_toBottomOf="@id/faculty6_email"
+                    app:layout_constraintStart_toStartOf="@id/faculty_image6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
